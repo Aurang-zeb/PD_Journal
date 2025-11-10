@@ -1,3 +1,4 @@
+<<<<<<< HEAD
  body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -122,3 +123,129 @@
   color: #ffdd59;
   border-bottom: 2px solid #ffdd59;
 }
+=======
+ body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #53a8ae, #fed6e3);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior:smooth;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(118, 75, 162, 0.9);
+      display: flex;
+      justify-content: center;
+      padding: 1rem 0;
+      z-index: 1000;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffdd59;
+    }
+
+    header {
+      background: linear-gradient(90deg, #667eea, #764ba2);
+      color: white;
+      text-align: center;
+      padding: 5rem 1rem 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      margin-bottom: 2rem;
+    }
+#printBtn {
+  background-color: #2c8d25;
+  color: white;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 1rem auto;
+  display: block;
+  transition: 0.3s;
+}
+@media print {
+  nav, #printBtn, footer {
+    display: none; /* hide navbar, footer, and button in PDF */
+  }
+  body {
+    background: white;
+    color: black;
+  }
+  main {
+    box-shadow: none;
+    background: white;
+  }
+}
+
+#printBtn:hover {
+  background-color: #667eea;
+}
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 0 auto 2rem;
+      background:whitesmoke;
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 2rem 3rem;
+      backdrop-filter: blur(6px);
+    }
+
+    section {
+      margin-bottom: 2rem;
+      border-left: 6px solid #667eea;
+      padding-left: 1rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.8s ease-in-out;
+    }
+
+    section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    h2, h3, h4 {
+      color: #764ba2;
+    }
+
+    ul li {
+      margin: 0.5rem 0;
+    }
+
+    a {
+      color: #667eea;
+      text-decoration: none;
+    }
+
+    footer {
+      background: #764ba2;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+    }
+    nav a.active {
+  color: #ffdd59;
+  border-bottom: 2px solid #ffdd59;
+}
+>>>>>>> 322d2c7bb987d088865bd7d00dafe04b46290ca8
