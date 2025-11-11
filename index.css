@@ -123,7 +123,7 @@
   color: #ffdd59;
   border-bottom: 2px solid #ffdd59;
 }
-=======
+
  body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -248,4 +248,26 @@
   color: #ffdd59;
   border-bottom: 2px solid #ffdd59;
 }
->>>>>>> 322d2c7bb987d088865bd7d00dafe04b46290ca8
+
+/*  */
+.img-sec {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.exp-img {
+  width: 180px;
+  height: auto; /* keeps aspect ratio */
+  border-radius: 10px;
+  object-fit: cover; /* prevents distortion */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.exp-img:hover {
+  transform: scale(1.05);
+}
+
