@@ -324,13 +324,15 @@ Overall, the Canadian system focuses on inclusion, creativity, critical thinking
   { id: 'sel', label: 'SEL' },
   { id: 'inclusive', label: 'Inclusive Education' },
   {id:'canada-education',label:'canada-education'},
+  {id:'motivation-letter',label:'motivation-letter'},
+  {id:'dive-deeper',label:'DiveDeeper'},
   { id: 'references', label: 'References' },
 ];
 const nav = document.querySelector('nav');
 
 sectionsData.forEach(section => {
   const a = document.createElement('a');
-  a.href = `#${section.id}`;
+  a.href = `#${section.id}`;  
   a.textContent = section.label;
   nav.appendChild(a);
 });
@@ -363,6 +365,8 @@ document.querySelectorAll('section').forEach(section => observerNav.observe(sect
     document.getElementById('printBtn').addEventListener('click', function() {
   window.print();
 });
+// 
+
   </script>
 </body>
 </html>

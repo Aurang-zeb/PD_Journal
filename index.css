@@ -7,30 +7,46 @@
       line-height: 1.6;
       scroll-behavior:smooth;
     }
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(118, 75, 162, 0.9);
+  display: flex;
+  overflow-x: auto;       /* allows horizontal scrolling */
+  white-space: nowrap;    /* keeps links in one line */
+  padding: 1rem 0;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  -webkit-overflow-scrolling: touch; /* smooth scrolling on iOS */
+}
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(118, 75, 162, 0.9);
-      display: flex;
-      justify-content: center;
-      padding: 1rem 0;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
+nav a {
+  display: inline-block;  /* keep links inline */
+  color: white;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: 600;
+  transition: 0.3s;
+}
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 600;
-      transition: 0.3s;
-    }
+nav a:hover {
+  color: #ffdd59;
+}
 
-    nav a:hover {
-      color: #ffdd59;
-    }
+/* optional: hide scrollbar but still allow scroll */
+nav::-webkit-scrollbar {
+  height: 6px;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+nav::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
 
     header {
       background: linear-gradient(90deg, #667eea, #764ba2);
@@ -133,29 +149,6 @@
       scroll-behavior:smooth;
     }
 
-    nav {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(118, 75, 162, 0.9);
-      display: flex;
-      justify-content: center;
-      padding: 1rem 0;
-      z-index: 1000;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 1rem;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: #ffdd59;
-    }
 
     header {
       background: linear-gradient(90deg, #667eea, #764ba2);
@@ -270,4 +263,6 @@
 .exp-img:hover {
   transform: scale(1.05);
 }
+
+
 
